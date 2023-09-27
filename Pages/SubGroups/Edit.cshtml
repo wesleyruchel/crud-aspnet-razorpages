@@ -1,0 +1,34 @@
+@page
+@model crud_aspnet.Pages_SubGroups.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>SubGroup</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SubGroup.Id" />
+            <div class="form-group">
+                <label asp-for="SubGroup.Name" class="control-label"></label>
+                <input asp-for="SubGroup.Name" class="form-control" />
+                <span asp-validation-for="SubGroup.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SubGroup.GroupId" class="control-label"></label>
+                <select asp-for="SubGroup.GroupId" class="form-control" asp-items="ViewBag.GroupId"></select>
+                <span asp-validation-for="SubGroup.GroupId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
