@@ -3,3 +3,15 @@
 Product management using ASP.NET and Razor Pages.
 
 Authentication with ASP.NET Identity.
+
+## Package Reference
+
+```
+Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.AspNetCore.Identity.UI
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Sqlit
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+```
