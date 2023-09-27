@@ -11,7 +11,7 @@ Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
 Microsoft.AspNetCore.Identity.EntityFrameworkCore
 Microsoft.AspNetCore.Identity.UI
 Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.Sqlit
+Microsoft.EntityFrameworkCore.Sqlite
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.VisualStudio.Web.CodeGeneration.Design
 ```
