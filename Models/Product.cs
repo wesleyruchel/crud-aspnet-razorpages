@@ -26,8 +26,8 @@ namespace crud_aspnet.Models
         public double Cost { get; set; }
 
         [Required(ErrorMessage = "Enter the product's profit margin.")]
-        [Range(0, 100, ErrorMessage = "The margin must be between 0 and 100 percent.")]
-        public int ProfiMargin { get; set; }
+        [Range(0.00, double.MaxValue, ErrorMessage = "The profit margin value must be greater than or equal to zero.")]
+        public double ProfiMargin { get; set; }
 
         [Range(0.01, double.MaxValue, ErrorMessage = "The sales value must be greater than zero.")]
         [Required(ErrorMessage = "Enter the sales value of the product.")]
